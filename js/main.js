@@ -73,3 +73,16 @@ function actualizarMapa(lat, lng) {
     map.setView([lat, lng], 13);
     marker.setLatLng([lat, lng]);
 }
+window.onload = function () {
+    // Obtener la IP del usuario automáticamente
+    fetch("https://api64.ipify.org?format=json")
+        .then(response => response.json())
+        .then(data => {
+            let userIP = data.ip; // IP del usuario
+            input.value = userIP; // Mostrar la IP en el input
+            buscarIP(userIP); // Buscar ubicación automáticamente
+        })
+        .catch(error => {
+            console.error("Error al obtener la IP del usuario:", error);
+        });
+};
