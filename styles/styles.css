@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: hsl(0, 0%, 17%);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.dates{
+    background:url(../images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dates-user{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dates h1{
+    color: white;
+    padding-top: 50px;
+}
+
+.dates-user input{
+    padding:15px;
+    width: 400px;
+    height:60px;
+    border: 1px solid grey;
+    border-radius:  5px 0  0 5px;
+    font-size: 1.5em;
+    color: hsl(0, 0%, 17%);
+}
+
+.button{
+    padding:15px;
+    height:60px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: black;
+    margin-left: -3px;
+    width:50px;
+   
+}
+.inform-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -52px;
+    
+}
+
+.inform{
+    display: flex;
+    align-items: initial;
+    flex-direction: row;
+    background-color:white;
+    width: 70%;
+    height: 123px;
+    border-radius: 10px;z-index: 1000;
+}
+.informs-div{
+    width: 400px;  
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.informs-div span{
+    font-size: 1em;
+    font-weight: bold;
+    color: hsl(0, 0%, 59%);
+    text-transform: uppercase;
+}
+
+.informs-div p{
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-top: 15px;
+}
+
+hr{
+    margin-top: 30px;
+    height: 50%;
+    border: 1px solid hsl(0, 0%, 87%) ;
+}
+
+
+#map {
+    margin-top: -71px;
+     height:375px; 
+     z-index: 0;
+    }
+
+    @media(max-width:414px){
+        .dates{
+            background:url(../images/pattern-bg-mobile.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .dates-user{
+            margin-top: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dates h1{
+            color: white;
+           
+        }
+        
+        .dates-user input{
+            padding:15px;
+            width: 250px;
+            height:40px;
+            border: 1px solid grey;
+            border-radius:  5px 0  0 5px;
+            font-size: 1em;
+            color: hsl(0, 0%, 17%);
+        }
+        
+        .button{
+            padding:15px;
+            height:40px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: black;
+            margin-left: 1px;
+            width:40px;
+           
+        }
+        .inform-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -220px;
+            
+        }
+
+        .inform{
+            display: flex;
+            align-items: initial;
+            flex-direction: column;
+            background-color:white;
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+        .informs-div{
+            width: 400px;  
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        
+        .informs-div span{
+            font-size: 1em;
+            font-weight: bold;
+            color: hsl(0, 0%, 59%);
+
+        }
+        
+        .informs-div p{
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        hr{
+            display: none;
+        }
+        
+        
+        #map {
+            margin-top: -120px;
+             height:70vh; 
+             z-index: 0;
+            }
+    }
